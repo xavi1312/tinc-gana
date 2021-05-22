@@ -5,11 +5,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./src/css/styles.css">
   <title>Tinc gana</title>
 </head>
 <body>
+  <header class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="search-input">
+            <input type="search" name="" placeholder="Buscar" id="">
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <img src="./src/img/Mesa 1/contact.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white mt-3">Tinc gana!</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <section class="col-12 col-lg-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./src/img/Mesa 1/foto1.png" alt="" width="100%" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/img/Mesa 1/foto1.png" alt="" width="100%" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/img/Mesa 1/foto1.png" alt="" width="100%" class="d-block">
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </section>
+        <nav class="col-12 col-lg-2">
+          <ul class="main-menu d-flex justify-content-space-between align-items-center flex-lg-column align-items-lg-stretch">
+            <li class="bg-white text-center align-middle">
+              <a href="#most-populars" class="text-primary">Most populats</a>
+            </li>
+            <li class="bg-white text-center align-middle">
+              <a href="">Entrants</a>
+            </li>
+            <li class="bg-white text-center align-middle">
+              <a href="">Segons</a>
+            </li>
+            <li class="bg-white text-center align-middle">
+              <a href="">Postres</a>
+            </li>
+            <li class="bg-white text-center align-middle">
+              <a href="">Veggie</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="col-12 col-lg-4">
+          <div class="forum bg-white text-primary text-center rounded mt-5 mt-lg-0">
+            <h2>Fòrum</h2>
+            <p class="mt-5">
+              "Estic interessada en ampliar els meus coneixements culinaris"
+            </p>
+            <div>
+              <img src="./src/img/Mesa 1/avatar1.png" alt="" class="rounded-circle me-2">
+              <span>Andrea, 45, advocada</span>
+            </div>
+            <p class="mt-5">
+              "Visc sol i aquesta web m'ajuda amb les noves idees per a cuinar!"
+            </p>
+            <div>
+              <img src="./src/img/Mesa 1/avatar2.png" alt="" class="rounded-circle me-2">
+              <span>Andrea, 45, advocada</span>
+            </div>
+            <button class="btn btn-outline-primary">Subscriu-te!</button>
+          </div>
+        </section>
+      </div>
+      <section class="row recipes-section">
+        <div class="col-12">
+          <article class="recipe-card rounded bg-white">
+            <img src="./src/img/Mesa 1/menu1.png" alt="" width="100%">
+            <div class="recipe-card-body d-flex flex-column pt-sm-3 pb-sm-4">
+              <h3 class="text-center">Pasta amb salsa al pesto i tomàquets</h3>
+
+              <div class="recipe-card-difficulty">
+                <span>Dificultad:</span>
+                <ul class="m-0">
+                  <li class="recipe-card-indicator active"></li>
+                  <li class="recipe-card-indicator active"></li>
+                  <li class="recipe-card-indicator"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="./src/js/index.js"></script>
 </body>
 </html>

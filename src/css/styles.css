@@ -3,3 +3,153 @@
   --color-white: #f7f5f5;
   --color-gray: #6d6d6d;
 }
+/* Main and other generic tags */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'ABeeZee', sans-serif;
+}
+main {
+  padding-top: 68px;
+  padding-bottom: 25px;
+  background: url('../img/fons.png');
+  min-height: 100vh;
+}
+header {
+  padding: 18px 0;
+}
+h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+}
+
+/* Utility classes */
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.btn {
+  border-radius: 0;
+  padding: 22px 31px;
+}
+.btn-outline-primary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* Search input */
+.search-input {
+  position: relative;
+  max-width: 160px;
+}
+.search-input input {
+  padding-left: 30px;
+  border: none;
+}
+.search-input:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+  background: url('../img/Mesa 1/lupa.png');
+}
+
+/* Carousel */
+.carousel {
+  border: 9px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+.carousel-indicators {
+  margin-bottom: 0;
+  bottom: -31px;
+  transform: translateY(100%);
+}
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+}
+.carousel-indicators [data-bs-target].active {
+  background-color: var(--color-primary);
+}
+
+/* Main menu */
+.main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.main-menu li {
+  padding: 23px;
+}
+.main-menu a {
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+/* Forum */
+.forum {
+  padding: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.forum h2 {
+  font-weight: 400; 
+}
+.forum .btn {
+  margin-top: 59px;
+}
+
+.recipes-section {
+  margin-top: 50px;
+}
+/* Recipe card */
+.recipe-card {
+  max-width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 12px 33px;
+}
+.recipe-card > * {
+  flex: 1 1;
+} 
+.recipe-card img {
+
+}
+.recipe-card h3 {
+  flex: 1 1;
+  font-size: 18px;
+  font-weight: 400;
+}
+.recipe-card-body {
+  color: var(--color-gray);
+}
+.recipe-card-body ul {
+  list-style: none;
+}
+.recipe-card-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+}
+.recipe-card-indicator.active {
+  background-color: var(--color-primary);
+}
