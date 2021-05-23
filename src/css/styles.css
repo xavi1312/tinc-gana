@@ -9,6 +9,7 @@ html {
 }
 body {
   font-family: 'ABeeZee', sans-serif;
+  font-style: italic;
 }
 main {
   padding-top: 68px;
@@ -99,6 +100,10 @@ h1, .footer-logo {
 .main-menu a {
   text-decoration: none;
   color: var(--color-gray);
+  transition: 300ms color;
+}
+.main-menu a:hover {
+  color: var(--color-primary);
 }
 
 /* Forum */
@@ -126,7 +131,8 @@ h1, .footer-logo {
   padding: 12px 33px;
   margin-bottom: 55px;
 }
-.recipe-card > * {
+.recipe-card > img,
+.recipe-card > .recipe-card-body {
   flex: 1 1;
 } 
 .recipe-card h3 {
@@ -153,6 +159,25 @@ h1, .footer-logo {
   background-color: var(--color-primary);
 }
 
+.recipe-card--big {
+  max-width: none;
+}
+.recipe-card--big img {
+  /* max-height: 200px; */
+}
+.recipe-card--big h2 {
+  font-size: 30px;
+  font-weight: 400
+}
+.recipe-card--big > * {
+  color: var(--color-primary);
+}
+.recipe-card--big p {
+  font-size: 18px;
+}
+.recipe-card-instructions {
+  flex
+}
 /* footer menu */
 footer {
   color: #fff;
