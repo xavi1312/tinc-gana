@@ -192,3 +192,14 @@ footer {
 .footer-logo {
   font-size: 31px;
 }
+
+/* Most populars tag */
+.most-populars-tag {
+  position: absolute;
+  padding: 20px 5px;
+  font-size: 25px;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, .5);
+  bottom: 60px;
+  left: 100px;
+}
