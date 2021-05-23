@@ -19,7 +19,7 @@ main {
 header {
   padding: 18px 0;
 }
-h1 {
+h1, .footer-logo {
   font-family: 'Akaya Kanadaka', cursive;
 }
 
@@ -124,17 +124,16 @@ h1 {
   flex-wrap: wrap;
   gap: 32px;
   padding: 12px 33px;
+  margin-bottom: 55px;
 }
 .recipe-card > * {
   flex: 1 1;
 } 
-.recipe-card img {
-
-}
 .recipe-card h3 {
   flex: 1 1;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400
+  color: var(--color-gray);
 }
 .recipe-card-body {
   color: var(--color-gray);
@@ -152,4 +151,19 @@ h1 {
 }
 .recipe-card-indicator.active {
   background-color: var(--color-primary);
+}
+
+/* footer menu */
+footer {
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-menu {
+  list-style: none;
+}
+.footer-menu li {
+  padding-bottom: 30px;
+}
+.footer-logo {
+  font-size: 31px;
 }
